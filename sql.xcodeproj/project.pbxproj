@@ -19,6 +19,8 @@
 		B081E8BE1D2A0D6700655A8C /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8BB1D2A0D6700655A8C /* SQLiteDB.swift */; };
 		B081E8BF1D2A0D6700655A8C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8BC1D2A0D6700655A8C /* SQLTable.swift */; };
 		B081E8C01D2A0D6700655A8C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8BD1D2A0D6700655A8C /* String-Extras.swift */; };
+		B08A4DF91D2CA5A80024DE40 /* strike.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A4DF81D2CA5A80024DE40 /* strike.swift */; };
+		B08A4DFB1D2CAD8E0024DE40 /* show.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A4DFA1D2CAD8E0024DE40 /* show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		B081E8BB1D2A0D6700655A8C /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		B081E8BC1D2A0D6700655A8C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		B081E8BD1D2A0D6700655A8C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		B08A4DF81D2CA5A80024DE40 /* strike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strike.swift; sourceTree = "<group>"; };
+		B08A4DFA1D2CAD8E0024DE40 /* show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = show.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				B081E8871D29F0D500655A8C /* LaunchScreen.storyboard */,
 				B081E88A1D29F0D500655A8C /* Info.plist */,
 				B081E8AE1D29F13300655A8C /* Header.h */,
+				B08A4DF81D2CA5A80024DE40 /* strike.swift */,
+				B08A4DFA1D2CAD8E0024DE40 /* show.swift */,
 			);
 			path = sql;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B081E8C01D2A0D6700655A8C /* String-Extras.swift in Sources */,
+				B08A4DF91D2CA5A80024DE40 /* strike.swift in Sources */,
+				B08A4DFB1D2CAD8E0024DE40 /* show.swift in Sources */,
 				B081E8BE1D2A0D6700655A8C /* SQLiteDB.swift in Sources */,
 				B081E8BF1D2A0D6700655A8C /* SQLTable.swift in Sources */,
 				B081E8811D29F0D500655A8C /* ViewController.swift in Sources */,
