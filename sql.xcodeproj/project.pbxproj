@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00D2F271D2FA90300548262 /* chaxun.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D2F261D2FA90300548262 /* chaxun.swift */; };
+		B06FA23E1D338B0C006A885F /* query.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FA23D1D338B0C006A885F /* query.swift */; };
 		B081E87F1D29F0D500655A8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E87E1D29F0D500655A8C /* AppDelegate.swift */; };
 		B081E8811D29F0D500655A8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8801D29F0D500655A8C /* ViewController.swift */; };
 		B081E8841D29F0D500655A8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081E8821D29F0D500655A8C /* Main.storyboard */; };
@@ -20,7 +22,6 @@
 		B081E8BF1D2A0D6700655A8C /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8BC1D2A0D6700655A8C /* SQLTable.swift */; };
 		B081E8C01D2A0D6700655A8C /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E8BD1D2A0D6700655A8C /* String-Extras.swift */; };
 		B08A4DF91D2CA5A80024DE40 /* strike.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A4DF81D2CA5A80024DE40 /* strike.swift */; };
-		B08A4DFB1D2CAD8E0024DE40 /* show.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A4DFA1D2CAD8E0024DE40 /* show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00D2F261D2FA90300548262 /* chaxun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chaxun.swift; sourceTree = "<group>"; };
+		B06FA23D1D338B0C006A885F /* query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = query.swift; sourceTree = "<group>"; };
 		B081E87B1D29F0D500655A8C /* sql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sql.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081E87E1D29F0D500655A8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B081E8801D29F0D500655A8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		B081E8BC1D2A0D6700655A8C /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		B081E8BD1D2A0D6700655A8C /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
 		B08A4DF81D2CA5A80024DE40 /* strike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strike.swift; sourceTree = "<group>"; };
-		B08A4DFA1D2CAD8E0024DE40 /* show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = show.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,8 @@
 				B081E88A1D29F0D500655A8C /* Info.plist */,
 				B081E8AE1D29F13300655A8C /* Header.h */,
 				B08A4DF81D2CA5A80024DE40 /* strike.swift */,
-				B08A4DFA1D2CAD8E0024DE40 /* show.swift */,
+				B00D2F261D2FA90300548262 /* chaxun.swift */,
+				B06FA23D1D338B0C006A885F /* query.swift */,
 			);
 			path = sql;
 			sourceTree = "<group>";
@@ -291,10 +294,11 @@
 			files = (
 				B081E8C01D2A0D6700655A8C /* String-Extras.swift in Sources */,
 				B08A4DF91D2CA5A80024DE40 /* strike.swift in Sources */,
-				B08A4DFB1D2CAD8E0024DE40 /* show.swift in Sources */,
 				B081E8BE1D2A0D6700655A8C /* SQLiteDB.swift in Sources */,
 				B081E8BF1D2A0D6700655A8C /* SQLTable.swift in Sources */,
+				B06FA23E1D338B0C006A885F /* query.swift in Sources */,
 				B081E8811D29F0D500655A8C /* ViewController.swift in Sources */,
+				B00D2F271D2FA90300548262 /* chaxun.swift in Sources */,
 				B081E87F1D29F0D500655A8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class delete: UIViewController{
       db = SQLiteDB.sharedInstance()
         
         
-    db.execute("create table if not exists tuser(vid integer primary key,uname varchar(20),mobile varchar(20),adress varchar(20)emall varchar(20))")
+   db.execute("create table if not exists ssuser(uid integer primary key,uname varchar(20),mobile varchar(20),address varchar(20),email varchar(20))")
     }
     
     @IBAction func strike(sender: AnyObject) {
@@ -29,7 +29,7 @@ class delete: UIViewController{
     }
     func strike(){
         let a=delete1.text!
-        let sql="delete from tuser where uname='\(a)'"
+        let sql="delete from ssuser where uname='\(a)'"
         let result = db.execute(sql)
         print(result)
     

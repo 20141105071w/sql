@@ -6,7 +6,7 @@
 //  Copyright © 2016年 20141105071. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 import UIKit
 
@@ -16,44 +16,43 @@ var db:SQLiteDB!
    
 
     
-    @IBOutlet weak var query: UITextField!
+  
    
-    @IBOutlet weak var show2: UITextView!
-
+    @IBOutlet var h: UITextField!
+ 
+    @IBOutlet var l: UITextField!
+    @IBOutlet var a: UITextView!
 
   
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
-        
         db = SQLiteDB.sharedInstance()
         
-        
-        db.execute("create table if not exists tuser(uid integer primary key,uname varchar(20),mobile varchar(20),adress varchar(20),email varchar(20))")
+        db.execute("create table if not exists ssuser(uid integer primary key,uname varchar(20),mobile varchar(20),address varchar(20),email varchar(20))")
     }
     
  
 
+    
+    @IBAction func j(sender: AnyObject) {
+        select()
+    }
+    func select()
+     {
+     a.text=""
+     let b=l.text!
+     let data = db.query("select * from ssuser where uname='\(b)'")
+     for var x=0 ; x<data.count ; x++
+     {
+      let ssuser = data[x]
+      a.text! += "姓名:"+String(ssuser["uname"]!)+"手机号:" + String(ssuser["mobile"]!)+"地址:"+String(ssuser["address"]!)+"电子邮件:"+String(ssuser["emaul"]!) + "\n"
+     }
+     
+     }
 
-   
-    @IBAction func show(sender: AnyObject) {
-        show1()
-    }
-    
- 
-    func show1(){
-        let b=query.text!
-        let data = db.query("select * from tuser where uname='\(b)'")
-        for var x=0;x<data.count;x++
-        {
-            let tuser = data[x]
-            show2.text! += "姓名:" + String(tuser["uname"]!) + "手机号:" + String(tuser["mobile"]!) + "地址:" + String(tuser["adress"]!) + "电子邮件:" + String(tuser["email"]!) + "\n"
-         }
-       print("qweqweqwe")
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
