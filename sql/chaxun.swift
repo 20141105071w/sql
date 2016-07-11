@@ -11,13 +11,6 @@ import UIKit
 class chaxun: UIViewController {
     
     var db:SQLiteDB!
-    
-
-    @IBAction func qingkong(sender: AnyObject) {
-        let sql = "delete from tuser"
-        let result = db.execute(sql)
-        print(result)
-    }
     @IBOutlet weak var text3: UITextView!
     
     override func viewDidLoad() {
@@ -33,15 +26,19 @@ class chaxun: UIViewController {
     @IBAction func selete1(sender: AnyObject) {
         selete()
     }
-
-    
-    func selete(){
+   func selete(){
         let data = db.query("select * from ssuser")
         for var x=0;x<data.count;x++
         {
             let tuser = data[x]
             text3.text! += "姓名" + String(tuser["uname"]!) + "电话" + String(tuser["mobile"]!) + "邮件" + String(tuser["email"]!) + "地址" + String(tuser["address"]!)+"\n"
         }
+    }
+
+    @IBAction func qingkong(sender: AnyObject) {
+        let sql = "delete from ssuser"
+        let result = db.execute(sql)
+        print(result)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
